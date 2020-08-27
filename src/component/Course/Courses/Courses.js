@@ -1,14 +1,14 @@
 import React from "react";
-
+import "./Courses.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Courses = (props) => {
   const { name, price, Duration } = props.item;
   return (
-    <div>
-      <h2>this is course:{name}</h2>
-      <h4> price: ${price}</h4>
+    <div className="box">
+      <h2 style={{ color: "salmon" }}> Course Name:{name}</h2>
+      <h4 style={{ color: "goldenrod" }}> price: ${price}</h4>
       <h4> course time:{Duration} </h4>
       <button
         style={{
